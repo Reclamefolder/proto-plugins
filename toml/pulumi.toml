@@ -1,0 +1,29 @@
+# A TOML plugin for proto:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "pulumi"
+type = "cli"
+
+[platform.macos]
+download-file = "pulumi-v{version}-darwin-{arch}.tar.gz"
+checksum-file = "pulumi-{version}-checksums.txt"
+
+[platform.linux]
+download-file = "pulumi-v{version}-linux-{arch}.tar.gz"
+checksum-file = "pulumi-{version}-checksums.txt"
+
+[platform.windows]
+download-file = "pulumi-v{version}-windows-{arch}.tar.gz"
+checksum-file = "pulumi-{version}-checksums.txt"
+
+[install]
+download-url = "https://github.com/pulumi/pulumi/releases/download/v{version}/{download_file}"
+checksum-url = "https://github.com/pulumi/pulumi/releases/download/v{version}/{checksum_file}"
+
+[install.arch]
+x86_64 = "x64"
+arm64 = "arm64"
+aarch64 = "arm64"
+
+[resolve]
+git-url = "https://github.com/pulumi/pulumi"
