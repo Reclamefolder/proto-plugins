@@ -1,2 +1,4 @@
+lychee = "0.20.1"
 [plugins]
 pulumi = "file://./toml/pulumi.toml"
+lychee = "file://./toml/lychee.toml"
