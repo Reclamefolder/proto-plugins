@@ -7,14 +7,17 @@ type = "cli"
 [platform.macos]
 download-file = "pulumi-v{version}-darwin-{arch}.tar.gz"
 checksum-file = "pulumi-{version}-checksums.txt"
+bin-path = "pulumi/pulumi"
 
 [platform.linux]
 download-file = "pulumi-v{version}-linux-{arch}.tar.gz"
 checksum-file = "pulumi-{version}-checksums.txt"
+bin-path = "pulumi/pulumi"
 
 [platform.windows]
 download-file = "pulumi-v{version}-windows-{arch}.tar.gz"
 checksum-file = "pulumi-{version}-checksums.txt"
+bin-path = "pulumi/pulumi.exe"
 
 [install]
 download-url = "https://github.com/pulumi/pulumi/releases/download/v{version}/{download_file}"
