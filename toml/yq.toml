@@ -15,6 +15,7 @@ download-file = "yq_windows_{arch}.exe"
 
 [install]
 download-url = "https://github.com/mikefarah/yq/releases/download/v{version}/{download_file}"
+primary = { bin-path = "yq_{platform}_{arch}" }
 
 [install.arch]
 x86_64 = "amd64"
