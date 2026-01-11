@@ -1,0 +1,27 @@
+# A TOML plugin for proto:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "yq"
+type = "cli"
+
+[platform.macos]
+download-file = "yq_darwin_{arch}.tar.gz"
+
+[platform.linux]
+download-file = "yq_linux_{arch}.tar.gz"
+
+[platform.windows]
+download-file = "yq_windows_{arch}.exe"
+
+[install]
+download-url = "https://github.com/mikefarah/yq/releases/download/v{version}/{download_file}"
+
+[install.arch]
+x86_64 = "amd64"
+x86 = "386"
+arm64 = "arm64"
+aarch64 = "arm64"
+arm = "arm"
+
+[resolve]
+git-url = "https://github.com/mikefarah/yq"

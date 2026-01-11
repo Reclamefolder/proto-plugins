@@ -33,3 +33,19 @@ Then install lychee via Proto!
 ```shell
 $ proto install lychee --pin
 ```
+
+## yq
+
+Install [yq](https://github.com/mikefarah/yq) (the go implementation by mikefarah) - a lightweight and portable command-line YAML, JSON and XML processor:
+
+Add the plugin to Proto:
+
+```shell
+$ proto plugin add yq https://raw.githubusercontent.com/Reclamefolder/proto-plugins/refs/heads/main/toml/yq.toml
+```
+
+Then install yq via Proto!
+
+```shell
+$ proto install yq --pin
+```
